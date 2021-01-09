@@ -7,6 +7,8 @@
     
     Without macros
     <div class="sc-bdfBwQ hDpBk"><p>Jumbotron</p></div>
+
+    Styled components can be empty
 */
 import styled from 'styled-components/macro';
 
@@ -19,11 +21,26 @@ import styled from 'styled-components/macro';
         -- styled.div
     Give it a template text containing regular css rules
         -- styled.div`
-                css rules           `
+                css rules
+            `
+    We are using flex-direction because generally when we are on the Netflix home page we either have the image to the left or right
+
+    Using flex-direction together with media queries to create a different layout for different screen sizes/devices
+    Responsive layout - makes a one column layout instead of a two-column layout
 */
 export const Inner = styled.div`
     display: flex;
     align-items: center;
+    flex-direction: ${( { direction } ) => direction};
     justify-content: space-between;
-    max-width: 1100px
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+`;
+
+export const Container = styled.div`
 `;
