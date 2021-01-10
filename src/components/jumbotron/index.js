@@ -8,6 +8,10 @@ import { Item, Inner,  Container, Pane, Title, SubTitle, Image } from './styles/
         -- If you pass down an object whatever it is l want to apply it to the first one that comes in
     Whenever there is a compond component the children must be passed down.
     Therefore, the Jumbotron compound should have children (It will be expecting Jumbotron's children in App.js)
+
+    Creating Grey Border Line
+    The grey border line will be difficult to get without encapsulating Inner
+    Encapsulating Inner inside Item
 */
 export default function Jumbotron({ children, direction = 'row', ...restProps }) {
     return (
