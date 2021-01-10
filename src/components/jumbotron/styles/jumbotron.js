@@ -60,7 +60,17 @@ export const Inner = styled.div`
     }
 `;
 
+/*
+    Fixing responsiveness issues
+    Take Item (Referencing Item or variable or function but make sure it's above)
+    Increase the vertical gap between the Jumbotron.SubTitle h2 and Jumbotron.Image when we have a smaller devices
+*/
 export const Container = styled.div`
+    @media (max-width: 1000px) {
+        ${Item}:last-of-type h2 {
+            margin-bottom: 50px;
+        }
+    }
 `;
 
 /*
