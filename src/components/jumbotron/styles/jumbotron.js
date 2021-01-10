@@ -23,6 +23,10 @@ import styled from 'styled-components/macro';
         -- styled.div`
                 css rules
             `
+*/
+         
+
+/* 
     We are using flex-direction because generally when we are on the Netflix home page we either have the image to the left or right
 
     Using flex-direction together with media queries to create a different layout for different screen sizes/devices
@@ -45,15 +49,48 @@ export const Inner = styled.div`
 export const Container = styled.div`
 `;
 
+/*
+    If you have a media of a maximum width of 1000 pixels set the width to 100% padding top and botton to 0 pixels, padding left and right to 45 pixels, align text to the right
+*/
 export const Pane = styled.div`
     width: 50%;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        padding 0 45px;
+        text-align: center;
+    }
 `;
 
+/*
+    We want font the font size of the title to be bigger.
+    To demonstrate what we want to sell
+    Font size should go down to 35 pixels
+*/
 export const Title = styled.h1`
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+
+    @margin (max-width: 600p) {
+        font-size: 35px;
+    }
 `;
 
+/*
+    I want font size to go down to 18 pixels
+*/
 export const SubTitle = styled.h2`
+    font-size: 26px;
+    font-weight: normal;
+    line-height: normal;
+
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
 `;
 
 export const Image = styled.img`
+    max-width: 100%;
+    height: auto;
 `;

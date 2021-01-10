@@ -11,12 +11,12 @@ import { Inner,  Container, Pane, Title, SubTitle, Image } from './styles/jumbot
 */
 export default function Jumbotron({ children, direction = 'row', ...restProps }) {
     return (
-        <Inner direction = { direction }>
-            {/*
-                Pulling Jumbotron's children in App.js
-            */}
-            { children }
-        </Inner>
+            <Inner direction = { direction }>
+                {/*
+                    Pulling Jumbotron's children in App.js
+                */}
+                { children }
+            </Inner>
     );
 }
 
