@@ -24,7 +24,21 @@ import styled from 'styled-components/macro';
                 css rules
             `
 */
-         
+
+/*
+    The grey border line will be difficult to get without encapsulating Inner
+    Encapsulating Inner inside Item
+    I will have a div that has a width of 100% and goes around the entire page
+    But with an Inner it will go ddown maybe with a 1000 pixels
+    We can make some css modifications such as a full width border
+*/
+export const Item = styled.div`
+    display: flex;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    color: white;
+    overflow: hidden;
+`;
 
 /* 
     We are using flex-direction because generally when we are on the Netflix home page we either have the image to the left or right

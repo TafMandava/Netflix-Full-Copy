@@ -1,5 +1,5 @@
 import React from 'react';
-import { Inner,  Container, Pane, Title, SubTitle, Image } from './styles/jumbotron';
+import { Item, Inner,  Container, Pane, Title, SubTitle, Image } from './styles/jumbotron';
 
 /*
     If no direction is passed default to a row
@@ -11,12 +11,14 @@ import { Inner,  Container, Pane, Title, SubTitle, Image } from './styles/jumbot
 */
 export default function Jumbotron({ children, direction = 'row', ...restProps }) {
     return (
+        <Item>
             <Inner direction = { direction }>
                 {/*
                     Pulling Jumbotron's children in App.js
                 */}
                 { children }
             </Inner>
+        </Item>    
     );
 }
 
