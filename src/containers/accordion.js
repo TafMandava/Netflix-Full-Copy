@@ -4,7 +4,9 @@ import { Accordion } from '../components';
 export function AccordionContainer() {
     return (
         <Accordion>
-            Accordion
+            <Accordion.Title>
+                Frequently Asked Questions
+            </Accordion.Title>
         </Accordion>
     );
 }

@@ -1,5 +1,10 @@
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
-   font-size: 16px;
+    
+`;
+
+export const Title = styled.h2`
+    font-size: 50px;
+    align-items: center;
 `;
