@@ -27,7 +27,7 @@ export const Text = styled.p`
 export const Link = styled.a`
     color: #757575;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 14px;
     text-decoration: none;
 `;
 
@@ -38,7 +38,7 @@ export const Link = styled.a`
 */
 export const Row = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     grid-gap: 15px;
 
     @media (max-width: 1000px) {

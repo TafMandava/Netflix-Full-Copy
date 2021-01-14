@@ -3,19 +3,11 @@ import { Container, Title, Text, Link, Row, Column, Break } from './styles/foote
 
 export default function Footer({ children, ...restProps }) {
     return (
-       <Title>
-           { children }
-       </Title>
-    );
-}
-
-Footer.Container = function FooterContainer({ children, ...restProps }) {
-    return (
         <Container { ...restProps }>
             { children }
         </Container>
     );
-} 
+}
 
 Footer.Row = function FooterRow({ children, ...restProps }) {
     return (
