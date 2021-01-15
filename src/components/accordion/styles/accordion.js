@@ -17,15 +17,30 @@ export const Inner = styled.div`
     margin: auto;
 `;
 
+export const Item = styled.div`
+    color: white;
+    margin-bottom: 10px;
+
+    &:first-of-type {
+        margin-top: 3em;   
+    }
+`;
+
 export const Frame = styled.div`
     
 `;
 
 export const Title = styled.h1`
-`;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: white;
+    text-align: center;
 
-export const Item = styled.div`
-    
+    @media (max-widrh: 600px) {
+        font-size: 35px;
+    }
 `;
 
 export const Header = styled.div`

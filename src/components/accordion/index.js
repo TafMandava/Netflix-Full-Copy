@@ -31,7 +31,7 @@ Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
 
 Accordion.Item = function AccordionItem({ children, ...restProps }) {
 
-    const [toggleShow, setToogleShow] = useState(false);
+    const [toggleShow, setToggleShow] = useState(false);
 
     return (
         /*
@@ -44,7 +44,7 @@ Accordion.Item = function AccordionItem({ children, ...restProps }) {
             It is going to be in the provider
             The issue is how do we get that information (toggleShow, setToogleShow) in Accordion.Header
         */
-        <ToggleContext.Provider value={{ toggleShow, setToogleShow }}>
+        <ToggleContext.Provider value={{ toggleShow, setToggleShow }}>
             <Item { ...restProps }>
                 { children }
             </Item>
