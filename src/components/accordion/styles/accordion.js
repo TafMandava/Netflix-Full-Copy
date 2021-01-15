@@ -1,30 +1,37 @@
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
-    
+    display: flex;
+    border-bottom: 8px solid #222; 
 `;
 
-export const Title = styled.h2`
-    font-size: 48px;
-    align-items: center;
-`;
 
+/*
+    argin: auto; - bring it in the middle
+*/
 export const Inner = styled.div`
-    border-bottom: 8px solid #222;
+    display: flex;
+    padding: 70px 45px;
+    flex-direction: column;
+    max-width: 815px;
+    margin: auto;
 `;
 
 export const Frame = styled.div`
     
 `;
 
+export const Title = styled.h1`
+`;
+
 export const Item = styled.div`
     
 `;
 
-export const Header = styled.h2`
+export const Header = styled.div`
 
 `;
 
-export const Body = styled.p`
+export const Body = styled.div`
 
 `;
