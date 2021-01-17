@@ -18,12 +18,16 @@ export const Inner = styled.div`
 `;
 
 /*
-    max-width: 670px; - Item shouldn't expand
+    max-width: 670px; - item shouldn't expand
+    margin: auto; - bring it in the middle
+    width: 100%; - full width
 */
 export const Item = styled.div`
     color: white;
     margin-bottom: 10px;
     max-width: 670px;
+    margin: auto;
+    width: 100%;
 
     &:first-of-type {
         margin-top: 3em;   
