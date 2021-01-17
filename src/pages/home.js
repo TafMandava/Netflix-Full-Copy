@@ -7,10 +7,11 @@ import { HeaderContainer } from '../containers/header';
 export default function Home() {
     return (
         <>
-            <HeaderContainer />
-            <JumbotronContainer />
-            <AccordionContainer />
-            <FooterContainer />
+            <HeaderContainer>
+                <JumbotronContainer />
+                <AccordionContainer />
+                <FooterContainer />
+            </HeaderContainer>
         </>
     );
 }
