@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion } from '../components';
+import { Accordion, OptForm } from '../components';
 import faqsData from '../fixtures/faqs.json';
 
 export function AccordionContainer() {
@@ -16,6 +16,14 @@ export function AccordionContainer() {
                     </Accordion.Item>
                 ))
             }
+
+            <OptForm>
+                <OptForm.Text>Ready to watch? Enter your email to create or restart your membership.</OptForm.Text>
+                <OptForm.Break />
+                <OptForm.Input placeholder="Email address" />
+                <OptForm.Button>Get Started</OptForm.Button>
+            </OptForm>
+
         </Accordion>
     );
 }
