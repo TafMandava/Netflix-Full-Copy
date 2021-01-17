@@ -19,6 +19,8 @@ export const Container = styled.div`
 
 /*
     If there is no background image provided use the basic one
+    padding: 18px 0 170px 0; - vertical height space between Opt Form and grey border
+    border-bottom: 8px solid #222;
 */
 export const Background = styled.div`
     display: flex;
@@ -26,6 +28,13 @@ export const Background = styled.div`
     background: url(${( { src } ) => 
         (src ? '../images/misc/${src}.jpg' : '../images/misc/home-bg.jpg')})
         top left / cover no-repeat;
+    
+    padding: 18px 0 170px 0;
+    border-bottom: 8px solid #222;
+
+    @media (max-width: 1000px) {
+        padding: 18px 0 68px 0;
+    }
 `;
 
 export const Logo = styled.img`
