@@ -5,7 +5,7 @@ import 'firebase/firestore';
 /* We need firebase auth for authorisation */
 import 'firebase/auth';
 /* Import seed file once because we do not want to create duplicate data */
-import { seedDatabase } from '../seed';
+/* import { seedDatabase } from '../seed'; */
 
 /* We need a config  */
 const firebaseConfig = {
