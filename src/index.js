@@ -25,6 +25,7 @@ import { GlobalStyles } from './global-styles';
     
 */
 import { firebase } from './lib/firebase.prod';
+import { FirebaseContext } from './context/firebase';
 
 render(
     /*
@@ -32,8 +33,10 @@ render(
         Adjacent JSX elements must be wrapped in an enclosin tag.
     */
     <>
-        <GlobalStyles />
-        <App />
+       <FirebaseContext.Provider value={ { firebase } }>
+            <GlobalStyles />
+            <App />
+       </FirebaseContext.Provider>
     </>,        
     document.getElementById('root')
 
