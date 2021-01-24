@@ -8,12 +8,14 @@ export default function Signin() {
         <>
             <HeaderContainer>
                 <Form>
-                    <Form.Title>
-                        Sign In
-                    </Form.Title>
-                    <Form.Input placeholder="Email or phone number" />
-                    <Form.Input placeholder="Password" />
-                    <Form.Button>Sign In</Form.Button>
+                    <Form.Base>
+                        <Form.Title>
+                            Sign In
+                        </Form.Title>
+                        <Form.Input placeholder="Email or phone number" />
+                        <Form.Input placeholder="Password" />
+                        <Form.Submit>Sign In</Form.Submit>
+                    </Form.Base>
                 </Form>
             </HeaderContainer>
             <FooterContainer />
