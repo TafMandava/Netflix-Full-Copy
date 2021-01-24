@@ -24,7 +24,10 @@ export const Container = styled.div`
 `;
 
 export const Base = styled.form`
-
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
 `;
 
 export const Title = styled.h1`
