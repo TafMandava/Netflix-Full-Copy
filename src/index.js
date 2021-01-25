@@ -31,6 +31,8 @@ render(
     /*
         JSX Fragment
         Adjacent JSX elements must be wrapped in an enclosin tag.
+        Wrapping our Aplication within Firebase as the provider at the top of our application
+        We can consume it using the context
     */
     <>
        <FirebaseContext.Provider value={ { firebase } }>

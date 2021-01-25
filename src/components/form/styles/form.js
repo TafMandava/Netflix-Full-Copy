@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Link as ReachRouterLink } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 /*  
     Put elements in the middle using the following css rules
@@ -23,6 +23,11 @@ export const Container = styled.div`
     margin-bottom: 100px;
 `;
 
+/*
+    Enough for fixing alignment
+        -- display: flex;
+        -- flex-direction: column;
+*/
 export const Base = styled.form`
     display: flex;
     flex-direction: column;
@@ -31,19 +36,48 @@ export const Base = styled.form`
 `;
 
 export const Title = styled.h1`
-
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 28px;
 `;
 
 export const Input = styled.input`
+    background: #333;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
 
+    &: last-of-type {
+        margin-bottom: 30px;
+    }
 `;
 
 export const Submit = styled.button`
+    background: #e50914;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 24px 0 12px;
+    padding: 16px;
+    border: 0;
+    color: white;
+    cursor: pointer;
 
+    &:disabled {
+        opacity: 0.5;
+    }
 `;
 
 export const Text = styled.p`
-
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 28px;
 `;
 
 export const TextSmall = styled.p`
@@ -54,7 +88,7 @@ export const TextSmall = styled.p`
     Styling React Router Link
     I do not want any text decoration and if l hover give me a text underline
 */
-export const Link = styled(ReachRouterLink)`
+export const Link = styled(ReactRouterLink)`
     color: white;
     text-decoration: none;
 
